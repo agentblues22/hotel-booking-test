@@ -19,7 +19,7 @@ export default function Map() {
       <WrappedMap
         className={classes.wrappedmap}
         googleMapURL={
-          "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAbWBoPViUbh4saSmgd6tX5ieCqWgaQubY"
+          "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
         }
         loadingElement={
           <div className={classes.loadingelement} style={{ height: "100%" }} />
