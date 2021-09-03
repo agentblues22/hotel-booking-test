@@ -1,0 +1,133 @@
+.collage_main {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(3, 220px);
+}
+.collage_item1 {
+  background-image: url(../public/POI/photo\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-size: cover;
+}
+.collage_item2 {
+  margin: 5px;
+  background-image: url(../public/POI/photo\ 2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-size: cover;
+}
+.collage_item3 {
+  margin: 5px;
+  background-image: url(../public/POI/photo\ 3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-size: cover;
+}
+.collage_item4 {
+  margin: 5px;
+  background-image: url(../public/POI/photo\ 4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-radius: 0px 30px 0px 0px;
+  background-size: cover;
+}
+.collage_item5 {
+  margin: 5px;
+  background-image: url(../public/POI/photo\ 5.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border-radius: 0px 0px 0px 30px;
+  background-size: cover;
+}
+.collage_item6 {
+  margin: 5px;
+  background-image: url(../public/POI/photo\ 2.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-size: cover;
+}
+.hover_over {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.hover_over:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.hover_over1 {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 0px 30px 0px 0px;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hover_over1:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.hover_over2 {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 0px 0px 0px 30px;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hover_over2:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .collage_main {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .collage_main {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+}

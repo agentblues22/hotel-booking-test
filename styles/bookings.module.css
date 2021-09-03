@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "jakarta";
+  src: url(../public/fonts/PlusJakartaDisplay-Medium.otf);
+}
+.body {
+  font-family: jakarta;
+}
+.icongallery_section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.icongallery_heading {
+  align-self: center;
+  font-size: 50px;
+}

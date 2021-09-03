@@ -1,0 +1,80 @@
+.main_formcontainer {
+  margin: 50px 0px 50px 0px;
+}
+
+.form_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form_itemcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+.form_label {
+  color: white;
+  font-size: 15px;
+}
+
+.form_item {
+  width: 180px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+.form_button {
+  width: 100%;
+  height: 50px;
+  padding: 12px 20px;
+  margin: 16px 0px 0px 0px;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+.form_button:hover {
+  background-color: white;
+  color: rgb(53, 53, 53);
+}
+.form_option {
+  color: black;
+}
+.form_item::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+@media (max-width: 900px) {
+  .form_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form_itemcontainer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: stretch;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .main_formcontainer {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+  }
+
+  .form_item {
+    width: 200px;
+    font-size: 12px;
+  }
+}

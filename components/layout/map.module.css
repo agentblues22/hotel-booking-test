@@ -1,0 +1,41 @@
+.mapcontainer {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 30px 0px 30px 0px;
+}
+.wrappedmap {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.loadingelement {
+  border-radius: 10px 10px 10px 10px;
+}
+.containerelement {
+  border-radius: 10px 10px 10px 10px;
+}
+.mapelement {
+  border-radius: 10px 10px 10px 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .mapcontainer {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    border-radius: 0px 10px 0px 10px;
+  }
+
+  .wrappedmap {
+    border-radius: 0px 10px 0px 10px;
+  }
+
+  .loadingelement {
+    border-radius: 0px 10px 0px 10px;
+  }
+  .containerelement {
+    border-radius: 0px 10px 0px 10px;
+  }
+  .mapelement {
+    border-radius: 0px 10px 0px 10px;
+  }
+}

@@ -1,0 +1,370 @@
+/*dont change this CSS go further down */
+
+@font-face {
+  font-family: "debby";
+  src: url(../public/fonts/Debby-Free-Font/Debby.ttf);
+}
+@font-face {
+  font-family: "jakarta";
+  src: url(../public/fonts/PlusJakartaDisplay-Medium.otf);
+}
+
+/* non default index CSS start here you can change below*/
+
+/*hero section*/
+
+.hero_section {
+  background-image: url("../public/carouselphotos/photo\ 5.jpg");
+  background-position: center;
+}
+.hero_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(139, 126, 1, 0.5)
+  );
+}
+.hero_span {
+  font-family: "debby";
+  color: rgb(255, 255, 255);
+  animation: containerAnimation ease 3s;
+}
+.hero_header {
+  font-family: "debby";
+  font-weight: 400;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+.hero_description {
+  font-size: 16px;
+
+  color: white;
+  padding: 20px 350px 20px 350px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .hero_header {
+    margin: 50px 0px 20px 0px;
+    font-size: 30px;
+  }
+  .hero_description {
+    margin: 0px 140px 50px 140px;
+    font-size: 15px;
+    padding: 0px 0px 0px 0px;
+  }
+  .hero_wrapper {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero_description {
+    display: none;
+  }
+}
+
+/* hero section ends*/
+.section_container {
+  background-image: url("../public/carouselphotos/photo\ 11.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 500px 800px;
+  grid-template-rows: auto;
+  grid-template-areas: "contain1 contain2";
+
+  padding: 10px 0px 10px 0px;
+}
+.grid_item1 {
+  grid-area: contain1;
+  font-size: 30px;
+  text-align: center;
+}
+.grid_item2 {
+  grid-area: contain2;
+  padding: 70px;
+  font-size: 50px;
+  color: rgba(53, 53, 53, 0.9);
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alignment_container {
+  margin: 0px 50px 0px 50px;
+  padding: 50px 0px 50px 0px;
+}
+.paragraphCTA {
+  font-size: 20px;
+}
+.galleryCTA {
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  background-color: rgba(23, 163, 65, 0.9);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.galleryCTA:hover {
+  background-color: rgb(9, 87, 32);
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid_item2 {
+    grid-area: contain2;
+    padding: 20px;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Tahoma, sans-serif !important;
+  }
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: auto;
+    grid-template-areas: "contain1 contain2";
+
+    padding: 10px 0px 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid_container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "contain1"
+      "contain2";
+  }
+  .grid_item2 {
+    grid-area: contain2;
+
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Tahoma, sans-serif !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .grid_item2 {
+    align-self: center;
+    grid-area: contain2;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Tahoma, sans-serif !important;
+  }
+  .galleryCTA {
+    width: 150px;
+    font-size: 15px;
+  }
+  .paragraphCTA {
+    font-size: 15px;
+  }
+}
+
+/* maps section */
+
+.map_part {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 50px 50px 0px 50px;
+}
+
+.map_paragraph {
+  align-self: center;
+  font-size: 70px;
+  color: rgba(53, 53, 53, 0.9);
+}
+
+.mapsection {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 1200px) {
+  .map_part {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .map_paragraph {
+    align-self: center;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+/*map section ends*/
+
+/* FAQ accordion section */
+
+.accordion_container {
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  width: 70%;
+  padding: 0px 0px 50px 0px;
+  margin: 50px 50px 50px 50px;
+  box-shadow: 1px 1px 15px 1px rgba(211, 190, 190, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.FAQ_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../public/carouselphotos/photo\ 9.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.faq_heading {
+  font-size: 50px;
+  padding: 20px;
+  align-self: center;
+  color: rgba(53, 53, 53, 0.9);
+}
+
+@media only screen and (max-width: 1200px) {
+  .faq_heading {
+    font-size: 25px;
+  }
+
+  .accordion_container {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .FAQ_section {
+    background-image: url("../public/carouselphotos/photo\ 9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .accordion_container {
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
+    box-shadow: 1px 1px 15px 1px rgba(211, 190, 190, 0.3);
+  }
+}
+/* FAQ accordion section ends here */
+
+/* imagegallery */
+
+.imagegallery_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*pricecard*/
+.pricecard_section {
+  background-image: url("../public/carouselphotos/photo\ 8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+  .pricecard_contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .pricecard_section {
+    background-image: url("../public/carouselphotos/photo\ 8.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* collage section*/
+.collage_sect {
+  background-image: url("../public/carouselphotos/photo\ 8.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.collage_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+  padding: 50px 0px 50px 0px;
+}
+.collage_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 50px;
+  padding: 0px 0px 0px 15px;
+  color: rgba(53, 53, 53, 0.9);
+}
+@media only screen and (max-width: 1200px) {
+  .collage_section {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    padding: 0px px 0px 0px;
+    align-items: center;
+  }
+  .collage_text {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+  }
+  .collage_sect {
+    background-image: url("../public/carouselphotos/photo\ 8.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .collage_text {
+    margin: 25px 20px 25px 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,124 @@
+.mainsection{
+    background-color: white;
+}
+.heading{
+    font-size: 40px;
+}
+
+.form_maincontainer{
+    margin: 0px 50px 0px 50px;
+ padding:50px 0px 50px 0px;
+}
+
+.form_container{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "contain1 contain2 contain3"
+                        "contain4 contain5 contain6"
+                        "contain7"
+                        ;
+  
+  padding: 10px 0px 10px 0px;
+}
+
+.input_text {
+    
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  .input_button{
+    
+    width: 200px;
+    height:70px;
+    font-size: 20px;
+    background-color:rgba(23, 163, 65, 0.9) ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  
+  .input_button:hover {
+    background-color: rgb(9, 87, 32);
+  }
+
+.grid_container1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+
+grid-area: contain1;
+   }
+ .grid_container2{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin: 10px 10px 10px 10px;
+grid-area: contain2;
+       }
+.grid_container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 10px 10px 10px;
+ grid-area: contain3;
+     }
+.grid_container4{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ margin: 10px 10px 10px 10px;
+  grid-area: contain4;
+     }
+.grid_container5{
+ display: flex;
+ flex-direction: column;
+justify-content: flex-start;
+margin: 10px 10px 10px 10px;
+grid-area: contain5;
+    }
+.grid_container6{
+    grid-area: contain6;
+
+}
+.grid_container7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+ grid-area: contain7;
+     }
+
+    .label_text{
+        margin: 10px 10px 10px 10px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        
+        .form_container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          padding: 10px 0px 10px 0px;
+        }
+        .heading{
+            font-size: 30px;
+            text-align: center;
+        }
+        .form_maincontainer{
+            margin: 0px 10px 0px 10px;
+         padding:10px 0px 10px 0px;
+        }
+    }
