@@ -20,7 +20,7 @@ function Footer() {
           </div>
           <div className={classes.grid_item_middle}>
             <NextLink href="/">
-              <a className={classes.footerlinks}>home</a>
+              <a className={classes.footerlinks}>Home</a>
             </NextLink>
 
             <NextLink href="/discover">
@@ -32,9 +32,12 @@ function Footer() {
           </div>
           <div className={classes.grid_item_last}>
             <h4 className={classes.heading_four}>Address:</h4>
-            <p className={classes.heading_four}>example P.O, Example</p>
-            <h4 className={classes.heading_four}>email:</h4>
-            <p className={classes.heading_four}>example@xyz.com</p>
+            <p className={classes.heading_four}>
+              Kuku Residency, Near Thrissur Medical College, Mundathickode Rd,
+              Peringandoor, Kerala 680596, India
+            </p>
+            <h4 className={classes.heading_four}>E-mail:</h4>
+            <p className={classes.heading_four}>kukuresidencytcr@gmail.com</p>
             <div className={classes.socialcontainer}>
               <a
                 className={classes.img1}

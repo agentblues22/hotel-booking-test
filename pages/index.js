@@ -7,23 +7,13 @@ import classes from "../styles/Home.module.css";
 
 import Pricecard from "../components/Pricecard";
 import Collage from "../components/Collage";
+import Hero from "../components/hero";
 
 export default function Home() {
   return (
     <body>
       <section className={classes.hero_section}>
-        <div className={classes.hero_wrapper}>
-          <div className={classes.hero_header}>
-            Come and stay like a local.
-            <span className={classes.hero_span}> Kuku Residency</span>
-          </div>
-          <hero className={classes.hero_description}>
-            lorem ipsum dolor amietLorem ipsum dolor sit amet, consectetur
-            adipiscing elit. In urna lectus, mattis non accumsan in, tempor
-            dictum neque.
-          </hero>
-          <div></div>
-        </div>
+        <Hero />
       </section>
       <section className={classes.pricecard_section}>
         <div className={classes.pricecard_contain}>
@@ -37,16 +27,25 @@ export default function Home() {
               <Gallery />
             </div>
             <div className={classes.grid_item2}>
-              Best rooms at affordable prices...
+              At our property
               <div className={classes.paragraphCTA}>
-                <p>
-                  lorem ipsum dolor amietLorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. In urna lectus, mattis non accumsan in,
-                  tempor dictum neque.{" "}
-                </p>
-                <NextLink href="/discover" passHref>
-                  <button className={classes.galleryCTA}>Learn More</button>
-                </NextLink>
+                <div className={classes.gallerytext}>
+                  i. <span className={classes.bolder}>Banquet Hall:</span> Our
+                  hall can conveniently accommodate 70+ guests with a separate
+                  dining area. We can host any special event like engagements,
+                  marriages, wedding reception, birthday parties etc. It can
+                  also be used for conferences, company meetings or seminars.
+                  For booking enquiries, please contact +91 902 031 6400 / +91
+                  807 569 8245
+                </div>
+                <div className={classes.gallerytext}>
+                  ii. <span className={classes.bolder}>Reader’s Den:</span> The
+                  Reader’s Den provides a 24X7 A/C library for ambitious and
+                  determined students to prepare for competitive exams. The
+                  library also provides individual study stations and discussion
+                  rooms. For booking enquiries, please contact +91 902 031 6400
+                  / +91 807 569 8245
+                </div>
               </div>
             </div>
           </div>
@@ -58,9 +57,10 @@ export default function Home() {
             Explore points of interests nearby!
             <div className={classes.paragraphCTA}>
               <p>
-                lorem ipsum dolor amietLorem ipsum dolor sit amet, consectetur
-                adipiscing elit. In urna lectus, mattis non accumsan in, tempor
-                dictum neque.{" "}
+                Few of the local attractions are Guruvayoor Temple,
+                Vadakkumnathan Temple, Athirapilly Waterfalls, Kerala
+                Kalamandalam, Shakthan Thampuran Palace, Peechi Dam, Chavakkad
+                Beach etc.{" "}
               </p>
               <NextLink href="/Explore" passHref>
                 <button className={classes.galleryCTA}>Explore</button>
@@ -78,7 +78,7 @@ export default function Home() {
           <div className={classes.faq_heading}>Frequently Asked Questions</div>
           <Accordion
             title="location of the residency?"
-            body="address of the residency is given in the footer. please refer.enefnwejfwpfpkfeqijfnwejvnwifnwefnwfwnf wefnwefewfnwfpwefewofj dpofwnefwfnwfpewifnewfpwqefonf ofnwefwenfe2pur2fnofnwrfiun fwepofnwefpwefwenfweprew   dpfnwefwpoifnj2rfpiuqefn2ru  s[onw efriqfneqpurnfw[eoqrn  woefnj2ero2nr2p9urj[ofknwe9 [oweifwe9ru2hjfdw[gnrifju"
+            body="address of the residency is given in the footer. please refer."
           />
           <Accordion
             title="how long does a room stays booked?"

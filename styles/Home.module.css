@@ -13,10 +13,6 @@
 
 /*hero section*/
 
-.hero_section {
-  background-image: url("../public/carouselphotos/photo\ 5.jpg");
-  background-position: center;
-}
 .hero_wrapper {
   width: 100%;
   display: flex;
@@ -77,30 +73,32 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.bolder {
+  font-weight: 700;
+}
 
 .grid_container {
-  display: grid;
-  grid-template-columns: 500px 800px;
-  grid-template-rows: auto;
-  grid-template-areas: "contain1 contain2";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   padding: 10px 0px 10px 0px;
 }
 .grid_item1 {
-  grid-area: contain1;
   font-size: 30px;
-  text-align: center;
 }
 .grid_item2 {
-  grid-area: contain2;
   padding: 70px;
   font-size: 50px;
   color: rgba(53, 53, 53, 0.9);
-  text-align: left;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.gallerytext {
+  padding: 20px 150px 20px 150px;
 }
 
 .alignment_container {
@@ -130,24 +128,14 @@
 
 @media only screen and (max-width: 1200px) {
   .grid_item2 {
-    grid-area: contain2;
     padding: 20px;
     font-size: 50px;
     color: black;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: Tahoma, sans-serif !important;
-  }
-
-  .grid_container {
-    display: grid;
-    grid-template-columns: 300px 600px;
-    grid-template-rows: auto;
-    grid-template-areas: "contain1 contain2";
-
-    padding: 10px 0px 10px 0px;
   }
 }
 
@@ -160,8 +148,6 @@
       "contain2";
   }
   .grid_item2 {
-    grid-area: contain2;
-
     font-size: 40px;
     color: black;
     text-align: center;
@@ -169,6 +155,9 @@
     flex-direction: column;
     justify-content: center;
     font-family: Tahoma, sans-serif !important;
+  }
+  .gallerytext {
+    padding: 20px 20px 20px 20px;
   }
 }
 
@@ -192,6 +181,9 @@
   }
   .paragraphCTA {
     font-size: 15px;
+  }
+  .gallerytext {
+    padding: 10px 5px 10px 5px;
   }
 }
 

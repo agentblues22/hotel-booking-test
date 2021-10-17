@@ -60,12 +60,12 @@ a {
 }
 .arrow_next {
   top: 50%;
-  right: 5%;
+  right: 10%;
 }
 
 .arrow_prev {
   top: 50%;
-  left: 5%;
+  left: 10%;
 }
 
 .carouselimagecontainer {
@@ -79,3 +79,11 @@ a {
 }
 
 /* css of gallery carousal ends here*/
+/*hero*/
+
+.arrow_prev_hero,
+.arrow_next_hero {
+  display: none;
+}
+
+/* css of hero ends here*/
