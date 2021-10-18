@@ -7,7 +7,7 @@ import classes from "../styles/Home.module.css";
 
 import Pricecard from "../components/Pricecard";
 import Collage from "../components/Collage";
-import Hero from "../components/Hero";
+import Hero from "../components/hero";
 
 export default function Home() {
   return (
