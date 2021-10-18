@@ -61,7 +61,11 @@ const Hero = () => {
             <div key={photo.key} className={classes.hero_main}>
               <div className={classes.hero_wrapper}>
                 <div alt={photo.name} className={classes.text_and_image}>
-                  <img className={classes.background} src={photo.url} />
+                  <img
+                    className={classes.background}
+                    alt="residency images"
+                    src={photo.url}
+                  />
                   <div className={classes.text}>
                     <div className={classes.hero_header}>
                       Come and stay like a local at
