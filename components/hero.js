@@ -63,7 +63,7 @@ const Hero = () => {
                 <div alt={photo.name} className={classes.text_and_image}>
                   <img
                     className={classes.background}
-                    alt={photo.name}
+                    alt="residency"
                     src={photo.url}
                   />
                   <div className={classes.text}>
