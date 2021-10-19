@@ -20,13 +20,14 @@
 .hero_header {
   font-family: "debby";
   font-weight: 400;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   text-align: center;
 }
 .hero_description {
   font-size: 16px;
-
+  padding: 20px 0px 0px 0px;
+  line-height: 25px;
   color: white;
 
   text-align: center;

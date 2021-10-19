@@ -11,8 +11,7 @@ function Footer() {
           <div className={classes.grid_item_first}>
             <button className={classes.button}> Logo</button>
             <p className={classes.heading_four}>
-              some paragraph that makes some sense especially when it talks
-              about the residency
+              Come and stay like a local at Kuku Residency
             </p>
             <div>
               <Map />
@@ -37,7 +36,11 @@ function Footer() {
               Peringandoor, Kerala 680596, India
             </p>
             <h4 className={classes.heading_four}>E-mail:</h4>
-            <p className={classes.heading_four}>kukuresidencytcr@gmail.com</p>
+            <p className={classes.heading_four}>
+              <NextLink href="mailto:kukuresidencytcr@gmail.com">
+                kukuresidencytcr@gmail.com
+              </NextLink>
+            </p>
             <div className={classes.socialcontainer}>
               <a
                 className={classes.img1}
