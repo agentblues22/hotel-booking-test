@@ -7,8 +7,8 @@ export default function Discover() {
   const photos = [
     {
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      heading: "heading of image",
+        "The standard room features vibrant décor, combining executive furnishings with twin bed and ample closet space.",
+      heading: "Standard Room",
       id: "ph1",
       url: [
         {
@@ -24,8 +24,8 @@ export default function Discover() {
     },
     {
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      heading: "heading of image",
+        "Deluxe room features a super comfy twin beds draped in crisp white linen, a seating area and a comfortable workspace. Each room has been designed and furnished attractively. ",
+      heading: "Deluxe Room",
       id: "ph2",
       url: [
         {
@@ -41,8 +41,8 @@ export default function Discover() {
     },
     {
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      heading: "heading of image",
+        ": The Executive rooms give you a space where you can relax your every second. It is a spacious room with a two twin size beds, a dedicated seating area and stylishly designed with detail to make your stay effortless and luxurious.",
+      heading: "Executive Room",
       id: "ph3",
       url: [
         {
