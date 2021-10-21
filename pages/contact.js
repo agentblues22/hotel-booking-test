@@ -36,7 +36,7 @@ export default function Contact() {
               placeholder="Your name.."
             />
 
-            <label htmlFor="subject">subject</label>
+            <label htmlFor="subject">Subject</label>
             <input
               className={classes.form_text}
               type="text"
@@ -45,7 +45,7 @@ export default function Contact() {
               {...register("subject", { required: true })}
               placeholder="subject"
             ></input>
-            <label htmlFor="email">e-mail</label>
+            <label htmlFor="email">Email</label>
             <input
               className={classes.form_text}
               type="text"
@@ -54,7 +54,7 @@ export default function Contact() {
               {...register("email", { required: true })}
               placeholder="name@example.com"
             ></input>
-            <label htmlFor="query">What is your Query?</label>
+            <label htmlFor="query">Post your question/comments</label>
             <textarea
               className={classes.form_textarea}
               id="query"
@@ -71,9 +71,7 @@ export default function Contact() {
           </form>
         </div>
         <div className={classes.socials_container}>
-          <div className={classes.Heading_container}>
-            <div className={classes.Heading}>Connect With Us...</div>
-          </div>
+          <div className={classes.Heading_container}></div>
           <div className={classes.links}>
             <div className={classes.link_object}>
               <div className={classes.subheading}>Address:</div>
