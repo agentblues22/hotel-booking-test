@@ -5,18 +5,25 @@ import NextLink from "next/link";
 function Pricecard() {
   const photos = [
     {
-      description: "room type 1",
+      description: "Standard Room",
       url: "/carouselphotos/photo 3.jpg",
-      price: "1100",
+      price: "1480",
       rating: "4.0/5",
       key: "01",
     },
     {
-      description: "room type 2",
+      description: "Deluxe Room",
       url: "/carouselphotos/photo 2.jpg",
-      price: "1000",
+      price: "1680",
       rating: "4.0/5",
       key: "02",
+    },
+    {
+      description: "Executive Room",
+      url: "/carouselphotos/photo 2.jpg",
+      price: "2520",
+      rating: "4.0/5",
+      key: "03",
     },
   ];
   return (
@@ -37,9 +44,6 @@ function Pricecard() {
                   {photo.description}
                 </div>
                 <div className={classes.prices_rating}>
-                  <div className={classes.rating}>
-                    user rating : {photo.rating}
-                  </div>
                   <div className={classes.price}> price : ₹{photo.price}</div>
                 </div>
               </div>
