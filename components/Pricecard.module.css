@@ -43,9 +43,9 @@
 .prices_rating {
   font-size: 16px;
   display: flex;
-  margin: 50px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   color: grey;
   width: 100%;
 }
