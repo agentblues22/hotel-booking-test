@@ -77,15 +77,15 @@ export default function Contact() {
               <div className={classes.subheading}>Address:</div>
 
               <div>
-                example road,
+                Kuku Residency, Near Thrissur Medical College, Mundathickode Rd,
                 <br />
-                example P.O example
+                Peringandoor, Kerala 680596, India
               </div>
             </div>
             <div className={classes.link_object}>
               <div className={classes.subheading}>Phone:</div>
               <NextLink href="#" passHref>
-                <div>0987654321</div>
+                <div>+91 902 031 6400 / +91 807 569 8245</div>
               </NextLink>
             </div>
             <div className={classes.link_object}>
