@@ -77,7 +77,7 @@ export default class Contact extends React.Component {
         <div className={classes.main_page}>
           <div className={classes.main_container}>
             <form className={classes.form_main} onSubmit={this.handleSubmit}>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name *</label>
               <input
                 className={classes.form_text}
                 type="text"
@@ -86,7 +86,7 @@ export default class Contact extends React.Component {
                 onChange={this.handleNameChange}
               />
 
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">Subject*</label>
               <input
                 className={classes.form_text}
                 type="text"
@@ -94,7 +94,7 @@ export default class Contact extends React.Component {
                 value={this.state.subject}
                 onChange={this.handleSubjectChange}
               ></input>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email*</label>
               <input
                 className={classes.form_text}
                 type="text"
@@ -102,7 +102,7 @@ export default class Contact extends React.Component {
                 value={this.state.email}
                 onChange={this.handleMailChange}
               ></input>
-              <label htmlFor="query">Post your question/comments</label>
+              <label htmlFor="query">Post your question/comments*</label>
               <textarea
                 className={classes.form_textarea}
                 id="query"
