@@ -14,7 +14,13 @@
   grid-area: contain1;
   border-radius: 0px 20px;
 }
-
+.stats {
+  align-self: left;
+}
+.spantext {
+  font-weight: 700;
+  font-size: 16px;
+}
 .room_container {
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   border-right: 1px solid rgba(0, 0, 0, 0.4);
@@ -33,7 +39,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   padding-left: 50px;
 }
 .room_paragraph {
@@ -47,34 +52,24 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 15px;
+  margin: 15px 0px 15px 0px;
   font-size: 50px;
   font-weight: bold;
 }
 
-.room_misc {
-  font-family: jakarta;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 15px;
-  font-size: 15px;
-  font-weight: bold;
-}
 @media only screen and (max-width: 1200px) {
   .room_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
   }
-  .room_misc {
-    display: none;
-  }
+
   .room_info {
-    padding: 20px;
     text-align: center;
+    padding-left: 0px;
   }
   .room_heading {
     justify-content: center;
