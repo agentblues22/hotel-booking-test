@@ -23,6 +23,9 @@ export default function Discover() {
         {
           image: "/room1/room 3.jpg",
         },
+        {
+          image: "/room1/room 4.jpg",
+        },
       ],
     },
     {
@@ -43,6 +46,9 @@ export default function Discover() {
         {
           image: "/room2/room 3.jpg",
         },
+        {
+          image: "/room2/room 4.jpg",
+        },
       ],
     },
     {
@@ -62,6 +68,9 @@ export default function Discover() {
         },
         {
           image: "/room3/room 3.jpg",
+        },
+        {
+          image: "/room3/room 4.jpg",
         },
       ],
     },

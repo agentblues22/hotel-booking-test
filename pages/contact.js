@@ -41,24 +41,36 @@ export default class Contact extends React.Component {
   };
 
   handleSubmit = (event) => {
-    if (this.state.name == "" || this.state.name == "name") {
+    if (
+      this.state.name.replace(/\s+/g, " ").trim() == "" ||
+      this.state.name.replace(/\s+/g, " ").trim() == "name" ||
+      this.state.name.replace(/\s+/g, " ").trim() == " "
+    ) {
       this.errorHandler();
     } else {
-      if (this.state.email == "" || this.state.email == "example@example.com") {
+      if (
+        this.state.email.replace(/\s+/g, " ").trim() == "" ||
+        this.state.email.replace(/\s+/g, " ").trim() == "example@example.com" ||
+        this.state.email.replace(/\s+/g, " ").trim() == " "
+      ) {
         this.errorHandler();
       } else {
-        if (this.state.query == "" || this.state.query == "text here") {
+        if (
+          this.state.query.replace(/\s+/g, " ").trim() == "" ||
+          this.state.query.replace(/\s+/g, " ").trim() == "text here" ||
+          this.state.query.replace(/\s+/g, " ").trim() == " "
+        ) {
           this.errorHandler();
         } else {
           if (
-            this.state.subject == "" ||
-            this.state.subject == "enter your subject here..."
+            this.state.subject.replace(/\s+/g, " ").trim() == "" ||
+            this.state.subject.replace(/\s+/g, " ").trim() ==
+              "enter your subject here..." ||
+            this.state.subject.replace(/\s+/g, " ").trim() == " "
           ) {
             this.errorHandler();
           } else {
-            this.setState({
-              error: "success",
-            });
+            this.successHandler();
           }
         }
       }
@@ -67,17 +79,38 @@ export default class Contact extends React.Component {
   };
 
   errorHandler() {
-    this.setState({
-      error: "components marked with * are necessary",
-    });
+    alert("components marked with * are necessary");
   }
+  successHandler() {
+    axios
+      .post("https://kuku-backend.herokuapp.com/contacts", {
+        name: this.state.name,
+        email: this.state.email,
+        subject: this.state.subject,
+        queries: this.state.query,
+      })
+      .then(function (response) {
+        if (response.data == "error") {
+          alert("Error Sending Messages");
+          window.location.reload();
+        } else if (response.data == "success") {
+          alert("Message Sent Successfully");
+          window.location.reload();
+        } else {
+          alert(response.data);
+        }
+      });
+  }
+
   render() {
     return (
       <section className={classes.main_section}>
         <div className={classes.main_page}>
           <div className={classes.main_container}>
             <form className={classes.form_main} onSubmit={this.handleSubmit}>
-              <label htmlFor="name">Name *</label>
+              <label htmlFor="name">
+                Name <span className={classes.span}>*</span>
+              </label>
               <input
                 className={classes.form_text}
                 type="text"
@@ -86,7 +119,9 @@ export default class Contact extends React.Component {
                 onChange={this.handleNameChange}
               />
 
-              <label htmlFor="subject">Subject*</label>
+              <label htmlFor="subject">
+                Subject<span className={classes.span}>*</span>
+              </label>
               <input
                 className={classes.form_text}
                 type="text"
@@ -94,15 +129,20 @@ export default class Contact extends React.Component {
                 placeholder={this.state.subject}
                 onChange={this.handleSubjectChange}
               ></input>
-              <label htmlFor="email">Email*</label>
+              <label htmlFor="email">
+                Email<span className={classes.span}>*</span>
+              </label>
               <input
                 className={classes.form_text}
-                type="text"
+                type="email"
                 id="email"
                 placeholder={this.state.email}
                 onChange={this.handleMailChange}
               ></input>
-              <label htmlFor="query">Post your question/comments*</label>
+              <label htmlFor="query">
+                Post your question/comments
+                <span className={classes.span}>*</span>
+              </label>
               <textarea
                 className={classes.form_textarea}
                 id="query"
@@ -116,7 +156,6 @@ export default class Contact extends React.Component {
                 value="Submit"
               ></input>
             </form>
-            <div>{this.state.error}</div>
           </div>
           <div className={classes.socials_container}>
             <div className={classes.Heading_container}></div>

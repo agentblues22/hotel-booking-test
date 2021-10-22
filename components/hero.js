@@ -24,6 +24,24 @@ const photos = [
     desc: "photo descrption",
     key: "03",
   },
+  {
+    name: "photo 4",
+    url: "/carouselphotos/photo 4.jpg",
+    desc: "photo descrption",
+    key: "04",
+  },
+  {
+    name: "photo 5",
+    url: "/carouselphotos/photo 5.jpg",
+    desc: "photo descrption",
+    key: "05",
+  },
+  {
+    name: "photo 6",
+    url: "/carouselphotos/photo 6.jpg",
+    desc: "photo descrption",
+    key: "06",
+  },
 ];
 const NextArrow = ({ onClick }) => {
   return (

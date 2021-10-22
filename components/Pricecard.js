@@ -6,21 +6,21 @@ function Pricecard() {
   const photos = [
     {
       description: "Standard Room",
-      url: "/carouselphotos/photo 3.jpg",
+      url: "/room1/room 1.jpg",
       price: "1480",
       rating: "4.0/5",
       key: "01",
     },
     {
       description: "Deluxe Room",
-      url: "/carouselphotos/photo 2.jpg",
+      url: "/room2/room 1.jpg",
       price: "1680",
       rating: "4.0/5",
       key: "02",
     },
     {
       description: "Executive Room",
-      url: "/carouselphotos/photo 2.jpg",
+      url: "/room3/room 1.jpg",
       price: "2520",
       rating: "4.0/5",
       key: "03",

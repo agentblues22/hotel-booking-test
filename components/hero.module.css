@@ -22,6 +22,7 @@
 }
 .background {
   z-index: -1;
+  background-position: cover;
 }
 .hero_span {
   font-family: "debby";

@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
 }
 
+.span {
+  color: red;
+}
+
 .main_page {
   display: flex;
   flex-direction: row;
