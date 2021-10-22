@@ -31,13 +31,14 @@
   font-size: 12px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
   .imagegallery_main {
     padding: 30px 10px 30px 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-self: center;
   }
 
   .imagegallery_container {
