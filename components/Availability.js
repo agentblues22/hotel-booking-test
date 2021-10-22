@@ -27,20 +27,16 @@ function Availability() {
           />
         </div>
         <div className={classes.form_itemcontainer}>
-          <label className={classes.form_label} htmlFor="country">
-            type of room:
+          <label className={classes.form_label} htmlFor="number">
+            No. of Guests:
           </label>
-          <select className={classes.form_item} id="room" name="room">
-            <option className={classes.form_option} value="type_1">
-              2 guests
-            </option>
-            <option className={classes.form_option} value="type_2">
-              2 guest
-            </option>
-            <option className={classes.form_option} value="type_3">
-              2 guests with AC
-            </option>
-          </select>
+          <input
+            type="number"
+            min="1"
+            className={classes.form_item}
+            id="room"
+            name="room"
+          ></input>
         </div>
         <div className={classes.form_itemcontainer}>
           <input

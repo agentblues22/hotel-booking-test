@@ -79,8 +79,10 @@ const Hero = () => {
                       bus stand, and 90 minutes away from Cochin International
                       Airport
                     </div>
+                    <div className={classes.Availability}>
+                      <Availability />
+                    </div>
                   </div>
-                  <Availability />
                 </div>
               </div>
             </div>

@@ -16,10 +16,12 @@
 }
 .stats {
   align-self: left;
+  color: #3a3b3c;
 }
 .spantext {
   font-weight: 700;
   font-size: 16px;
+  color: #3a3b3c;
 }
 .room_container {
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
@@ -40,6 +42,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 50px;
+  color: #3a3b3c;
 }
 .room_paragraph {
   font-family: jakarta;

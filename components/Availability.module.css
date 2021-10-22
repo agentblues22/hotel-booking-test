@@ -1,5 +1,6 @@
 .main_formcontainer {
   margin: 50px 0px 50px 0px;
+  z-index: 100;
 }
 
 .form_main {
