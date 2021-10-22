@@ -37,19 +37,19 @@
   font-size: 15px;
   width: 60%;
   color: rgba(53, 53, 53, 0.9);
-  padding: 10px 10px 10px 10px;
+  padding: 0px 10px 0px 10px;
   overflow: hidden;
   max-height: 300px;
 }
 @keyframes container_animation {
   0% {
     max-height: 0px;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
   }
 
   100% {
     max-height: 300px;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
   }
 }
 
