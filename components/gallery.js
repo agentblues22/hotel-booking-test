@@ -7,13 +7,13 @@ import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 const photos = [
   {
     name: "photo 1",
-    url: "/carouselphotos/photo 1.jpg",
+    url: "/carouselphotos/photo 5.jpg",
     desc: "photo descrption",
     key: "01",
   },
   {
     name: "photo 2",
-    url: "/carouselphotos/photo 2.jpg",
+    url: "/carouselphotos/photo 6.jpg",
     desc: "photo descrption",
     key: "02",
   },
@@ -40,7 +40,7 @@ const PrevArrow = ({ onClick }) => {
 };
 const Gallery = () => {
   const settings = {
-    dots: true,
+    dots: false,
     fade: true,
     infinite: true,
     speed: 500,

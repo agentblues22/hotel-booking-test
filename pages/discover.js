@@ -104,8 +104,9 @@ export default function Discover() {
                   {photo.tariff}
                 </p>
               </div>
-
-              <Icongallery />
+              <div className={classes.icongallery}>
+                <Icongallery />
+              </div>
             </div>
           </div>
         );

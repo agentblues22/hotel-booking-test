@@ -46,11 +46,16 @@
     width: 100% !important;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 400px) {
+  .imagegallery_sub {
+    width: 100%;
+    justify-content: space-around;
+  }
   .imagegallery_main {
     padding: 0px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
 
     justify-self: center;
   }

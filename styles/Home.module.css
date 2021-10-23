@@ -148,7 +148,7 @@
       "contain2";
   }
   .grid_item2 {
-    font-size: 40px;
+    font-size: 20px;
     color: black;
     text-align: center;
     display: flex;
@@ -176,14 +176,14 @@
     font-family: Tahoma, sans-serif !important;
   }
   .galleryCTA {
-    width: 150px;
-    font-size: 15px;
+    width: 180px;
+    font-size: 13px;
   }
   .paragraphCTA {
-    font-size: 15px;
+    font-size: 13px;
   }
   .gallerytext {
-    padding: 10px 5px 10px 5px;
+    padding: 10px 0px 10px 0px;
   }
 }
 
@@ -338,7 +338,7 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     margin: 0px 0px 0px 0px;
-    padding: 0px px 0px 0px;
+    padding: 0px 0px 0px 0px;
     align-items: center;
   }
   .collage_text {
@@ -354,8 +354,8 @@
 }
 @media only screen and (max-width: 800px) {
   .collage_text {
-    margin: 25px 20px 25px 20px;
+    margin: 15px 20px 15px 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
