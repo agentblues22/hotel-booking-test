@@ -44,7 +44,7 @@ function Pricecard() {
                   {photo.description}
                 </div>
                 <div className={classes.prices_rating}>
-                  <div className={classes.price}> price : ₹{photo.price}</div>
+                  <div className={classes.price}> Price : ₹{photo.price}</div>
                 </div>
               </div>
             </div>

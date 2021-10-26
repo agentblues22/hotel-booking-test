@@ -96,15 +96,15 @@ export default function Discover() {
               <div className={classes.room_paragraph}>{photo.description}</div>
               <div>
                 <p className={classes.stats}>
-                  <span className={classes.spantext}>Space size:</span>
+                  <span className={classes.spantext}>Space size :</span>
                   {photo.area}
                 </p>
                 <p className={classes.stats}>
-                  <span className={classes.spantext}>Max Occupancy:</span>
+                  <span className={classes.spantext}>Max Occupancy :</span>
                   {photo.max_occ}
                 </p>
                 <p className={classes.stats}>
-                  <span className={classes.spantext}>Tariff:</span>
+                  <span className={classes.spantext}>Tariff : ₹</span>
                   {photo.tariff}
                 </p>
               </div>
