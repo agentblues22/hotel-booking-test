@@ -17,7 +17,7 @@ function Footer() {
                 height="80px"
               />
             </div>
-            <p className={classes.heading_four}>Make you feel at home</p>
+            <p className={classes.heading_four}>Make you feel at home.</p>
             <div>
               <Map />
             </div>
