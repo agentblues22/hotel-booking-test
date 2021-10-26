@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "debby";
-  src: url(../public/fonts/sans/static/WorkSans-Bold.ttf);
+  font-family: "calibiri";
+  src: url(../public/fonts/calibri/Calibri\ Regular.ttf);
 }
 @font-face {
   font-family: "jakarta";
@@ -26,7 +26,7 @@
 }
 .spantext {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   color: #3a3b3c;
 }
 .galleryCTA {
@@ -68,12 +68,12 @@
   color: #3a3b3c;
 }
 .room_paragraph {
-  font-family: jakarta;
+  font-family: "calibiri";
   align-self: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 .room_heading {
-  font-family: debby;
+  font-family: "calibiri";
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -81,6 +81,9 @@
   margin: 15px 0px 15px 0px;
   font-size: 50px;
   font-weight: bold;
+}
+.stats {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1300px) {

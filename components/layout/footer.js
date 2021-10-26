@@ -9,7 +9,14 @@ function Footer() {
       <div className={classes.maincontainer}>
         <div className={classes.grid_container}>
           <div className={classes.grid_item_first}>
-            <button className={classes.button}> Logo</button>
+            <div>
+              <Image
+                alt="kuku residency"
+                src="/logo.png"
+                width="200px"
+                height="80px"
+              />
+            </div>
             <p className={classes.heading_four}>
               Come and stay like a local at Kuku Residency
             </p>
@@ -43,14 +50,14 @@ function Footer() {
             </p>
             <div className={classes.socialcontainer}>
               <a
-                className={classes.img1}
+                className={classes.img2}
                 href="https://www.twitter.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <Image
                   alt="twitter"
-                  src="/twitter.png"
+                  src="/twitter_black.png"
                   width="30px"
                   height="30px"
                 />
@@ -63,7 +70,20 @@ function Footer() {
               >
                 <Image
                   alt="facebook"
-                  src="/facebook.png"
+                  src="/facebook_black.png"
+                  width="30px"
+                  height="30px"
+                />
+              </a>
+              <a
+                className={classes.img2}
+                href="https://www.instagram.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Image
+                  alt="facebook"
+                  src="/instagram_black.png"
                   width="30px"
                   height="30px"
                 />

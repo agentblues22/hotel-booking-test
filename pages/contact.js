@@ -205,6 +205,16 @@ export default class Contact extends React.Component {
                       />
                     </NextLink>
                   </div>
+                  <div>
+                    <NextLink href="https://www.instagram.com" passHref>
+                      <Image
+                        alt="twitter"
+                        src="/instagram_black.png"
+                        width="30px"
+                        height="30px"
+                      />
+                    </NextLink>
+                  </div>
                 </div>
               </div>
             </div>

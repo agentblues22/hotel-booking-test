@@ -1,6 +1,9 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
-
+@font-face {
+  font-family: "calibiri";
+  src: url(../public/fonts/calibri/Calibri\ Regular.ttf);
+}
 @font-face {
   font-family: "jakarta";
   src: url(../public/fonts/PlusJakartaText-Light.otf);
@@ -10,7 +13,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: jakarta;
+  font-family: "calibiri";
 
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;

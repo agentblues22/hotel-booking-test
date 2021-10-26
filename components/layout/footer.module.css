@@ -1,13 +1,13 @@
 .footer {
-  color: white;
-  background-color: #3a3b3c;
+  color: #3a3b3c;
+  background-color: #fafafa;
   background-size: contain;
 }
 
 .maincontainer {
   width: 100%;
   padding: 10px 50px 10px 50px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .grid_container {
@@ -15,12 +15,12 @@
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "contain1 contain2 contain3";
-  background-color: #3a3b3c;
+  background-color: #fafafa;
   padding: 10px;
 }
 .grid_item_first {
   grid-area: contain1;
-  background-color: #3a3b3c;
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,7 +28,7 @@
 }
 .grid_item_middle {
   grid-area: contain2;
-  background-color: #3a3b3c;
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -36,7 +36,7 @@
 }
 .grid_item_last {
   grid-area: contain3;
-  background-color: #3a3b3c;
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,7 +44,7 @@
 }
 .button {
   border: none;
-  color: white;
+  color: #3a3b3c;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -53,23 +53,24 @@
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: #3a3b3c;
-  color: white;
-  border: 2px solid white;
+  background-color: #fafafa;
+  color: #3a3b3c;
+  border: 2px solid #3a3b3c;
 }
 
 .button:hover {
-  background-color: white;
-  color: #3a3b3c;
+  background-color: #3a3b3c;
+  color: #fafafa;
 }
 .footerlinks {
   font-size: 17px;
   margin: 5px 5px 5px 5px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
+  color: #3a3b3c;
 }
 .footerlinks:hover {
-  color: white;
+  color: #3a3b3c;
+  font-weight: 900;
 }
 .heading_four {
   padding: 10px 10px 10px 10px;

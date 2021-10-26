@@ -40,13 +40,15 @@ function Icongallery() {
       {photos.map((photo) => {
         return (
           <div key={photo.key} className={classes.imagegallery_sub}>
-            <Image
-              alt={photo.description}
-              className={classes.imagegallery_container}
-              src={photo.url}
-              width="40px"
-              height="30px"
-            ></Image>
+            <div className={classes.img_container}>
+              <Image
+                alt={photo.description}
+                className={classes.imagegallery_container}
+                src={photo.url}
+                width="40px"
+                height="30px"
+              ></Image>
+            </div>
             <div className={classes.imagegallery_paragraph}>
               {photo.description}
             </div>

@@ -1,5 +1,5 @@
 .container {
-  background-color: #3a3b3c;
+  background-color: #fafafa;
   padding: 10px 50px 10px 50px;
   width: 100%;
   background-size: contain;
@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3a3b3c;
+  background-color: #fafafa;
   width: 100%;
   line-height: 70px;
   position: relative;
@@ -27,49 +27,51 @@
 .menu_links {
   clear: right;
   border: none;
-  color: white;
+  color: #3a3b3c;
   padding: 14px 14px;
   margin: 0px 20px 0px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 2px;
-  transition-duration: 0.14s;
+  transition-duration: 0.24s;
   cursor: pointer;
-  background-color: #3a3b3c;
-  color: white;
+  background-color: #fafafa;
+  color: #3a3b3c;
+  font-size: 20px;
 }
 
 .menu_links a {
   display: block;
-  color: white;
+  color: #3a3b3c;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition-timing-function: ease;
+
   transition-duration: 0.2s;
   border-radius: 10px;
 }
 
 .menu_links:hover {
   font-weight: 700;
+  transition-duration: 0.24s;
 }
 .label {
   margin: 0 40px 0 0;
   font-size: 26px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #3a3b3c;
   line-height: 70px;
   display: none;
 }
 .label:active {
-  color: white;
+  color: #3a3b3c;
 }
 .toggle {
   display: none;
 }
 
 .item_left {
-  color: white;
+  color: #3a3b3c;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -78,14 +80,14 @@
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: #3a3b3c;
+  background-color: #fafafa;
 
-  border: 2px solid white;
+  border: 2px solid #3a3b3c;
 }
 
 .item_left a {
   display: block;
-  color: white;
+  color: #3a3b3c;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -95,13 +97,13 @@
 }
 
 .item_left:hover {
-  background-color: white;
-  color: #3a3b3c;
+  background-color: #3a3b3c;
+  color: #fafafa;
 }
 .menu_links_contact {
   clear: right;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #3a3b3c;
+  color: #3a3b3c;
   padding: 14px 14px;
   margin: 0px 20px 0px 20px;
   text-align: center;
@@ -110,13 +112,14 @@
   border-radius: 0px 15px 0px 15px;
   transition-duration: 0.34s;
   cursor: pointer;
-  background-color: #3a3b3c;
-  color: white;
+  background-color: #fafafa;
+  color: #3a3b3c;
+  font-size: 20px;
 }
 
 .menu_links_contact a {
   display: block;
-  color: white;
+  color: #3a3b3c;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -126,8 +129,8 @@
 }
 
 .menu_links_contact:hover {
-  background-color: white;
-  color: #3a3b3c;
+  background-color: #3a3b3c;
+  color: #fafafa;
 }
 
 @media only screen and (max-width: 700px) {
@@ -167,7 +170,7 @@
     margin: 0;
     border: 0;
     align-self: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #3a3b3c;
   }
 
@@ -177,8 +180,8 @@
   }
 
   .menu_links:hover {
+    color: #fafafa;
     background-color: #3a3b3c;
-    color: white;
   }
   .toggle:checked + .menu {
     display: block;
@@ -186,7 +189,7 @@
     align-items: center;
   }
   .toggle:checked + .label {
-    color: #3a3b3c;
+    color: #fafafa;
   }
 
   .menu_links_contact {
@@ -195,7 +198,7 @@
     border: 0;
     border-radius: 0px;
     align-self: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #3a3b3c;
   }
 
@@ -206,6 +209,6 @@
 
   .menu_links_contact:hover {
     background-color: #3a3b3c;
-    color: white;
+    color: #fafafa;
   }
 }
