@@ -30,7 +30,7 @@ function Icongallery() {
       key: "06",
     },
     {
-      description: "Extra bed available ",
+      description: "Extra bed available* ",
       url: "/icons/bed.png",
       key: "07",
     },

@@ -1,6 +1,13 @@
 import classes from "./Availability.module.css";
 
 function Availability() {
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, "0");
+  var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = yyyy + "-" + mm + "-" + dd;
+
   return (
     <div className={classes.main_formcontainer}>
       <form className={classes.form_main} action="/discover">
@@ -13,6 +20,8 @@ function Availability() {
             type="date"
             id="fname"
             name="firstname"
+            min={today}
+            value={today}
           />
         </div>
         <div className={classes.form_itemcontainer}>
@@ -24,6 +33,8 @@ function Availability() {
             type="date"
             id="lname"
             name="lastname"
+            min={today}
+            value={today}
           />
         </div>
         <div className={classes.form_itemcontainer}>
@@ -36,6 +47,7 @@ function Availability() {
             className={classes.form_item}
             id="room"
             name="room"
+            value="1"
           ></input>
         </div>
         <div className={classes.form_itemcontainer}>

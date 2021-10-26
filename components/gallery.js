@@ -60,7 +60,7 @@ const Gallery = () => {
                 alt={photo.name}
                 className="carouselimagecontainer"
                 src={photo.url}
-                width="950px"
+                width="650px"
                 height="500px"
               ></Image>
             </div>

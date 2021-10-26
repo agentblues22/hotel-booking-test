@@ -2,7 +2,7 @@
   padding: 20px 0px 0px 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -31,13 +31,13 @@
   font-size: 12px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1100px) {
   .imagegallery_main {
     padding: 30px 10px 30px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-self: center;
   }
 

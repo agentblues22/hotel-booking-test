@@ -172,9 +172,15 @@ export default class Contact extends React.Component {
               </div>
               <div className={classes.link_object}>
                 <div className={classes.subheading}>Phone:</div>
-                <NextLink href="#" passHref>
-                  <div>+91 902 031 6400 / +91 807 569 8245</div>
-                </NextLink>
+                <div>
+                  <a href="tel:+919020316400" passHref>
+                    +91 902 031 6400
+                  </a>{" "}
+                  /
+                  <a href="tel:+918075698275" passHref>
+                    +91 807 569 8245
+                  </a>
+                </div>
               </div>
               <div className={classes.link_object}>
                 <div className={classes.subheading}>Socials:</div>

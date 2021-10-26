@@ -78,27 +78,33 @@
 }
 
 .grid_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 500px 800px;
+  grid-template-rows: auto;
+  grid-template-areas: "contain1 contain2";
 
   padding: 10px 0px 10px 0px;
 }
 .grid_item1 {
-  font-size: 30px;
+  grid-area: contain1;
+  font-size: 10px;
+  text-align: center;
+  animation: containerAnimation ease 2s;
 }
 .grid_item2 {
-  padding: 70px;
+  grid-area: contain2;
+  padding: 30px;
   font-size: 50px;
   color: rgba(53, 53, 53, 0.9);
-  text-align: center;
+  text-align: left;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .gallerytext {
-  padding: 20px 150px 20px 150px;
+  padding: 20px 0px 20px 0px;
+  font-size: 17px;
 }
 
 .alignment_container {

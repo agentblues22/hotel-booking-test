@@ -4,6 +4,10 @@ import Roomcarousal from "../components/roomcarousal";
 import Icongallery from "../components/Icongallery";
 
 export default function Discover() {
+  function AlertBox() {
+    alert("For Booking contact +91 902 031 6400 / +91 807 569 8245");
+  }
+
   const photos = [
     {
       description:
@@ -107,6 +111,12 @@ export default function Discover() {
               <div className={classes.icongallery}>
                 <Icongallery />
               </div>
+              <div className={classes.small_reminder}>
+                * Additional charges applicable for extra bed{" "}
+              </div>
+              <button onClick={AlertBox} className={classes.galleryCTA}>
+                Book Now
+              </button>
             </div>
           </div>
         );
