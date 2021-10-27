@@ -96,7 +96,12 @@ function Explore() {
                   <div>
                     Distance from Residency : {photo.distance} Km{" "}
                     <a href={photo.destination_url}>
-                      <Image src="/map_red.png" width="20px" height="20px" />
+                      <Image
+                        alt={photo.heading}
+                        src="/map_red.png"
+                        width="20px"
+                        height="20px"
+                      />
                     </a>
                   </div>
                   <div>taxi service : {photo.taxi}</div>
