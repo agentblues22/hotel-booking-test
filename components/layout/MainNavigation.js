@@ -3,6 +3,10 @@ import NextLink from "next/link";
 import Image from "next/image";
 
 function MainNavigation() {
+  function toggl() {
+    const cb = document.getElementById("toggle");
+    cb.checked = false;
+  }
   return (
     <section className={classes.container}>
       <div>
@@ -22,14 +26,20 @@ function MainNavigation() {
         <input className={classes.toggle} type="checkbox" id="toggle" />
         <div className={classes.menu}>
           <NextLink href="/" passHref>
-            <a className={classes.menu_links}>Home</a>
+            <a className={classes.menu_links} onClick={toggl}>
+              Home
+            </a>
           </NextLink>
 
           <NextLink href="/discover" passHref>
-            <a className={classes.menu_links}>Discover</a>
+            <a className={classes.menu_links} onClick={toggl}>
+              Discover
+            </a>
           </NextLink>
           <NextLink href="/contact" passHref>
-            <a className={classes.menu_links_contact}>Contact Us</a>
+            <a className={classes.menu_links_contact} onClick={toggl}>
+              Contact Us
+            </a>
           </NextLink>
         </div>
       </div>
