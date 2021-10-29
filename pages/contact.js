@@ -16,6 +16,7 @@ export default class Contact extends React.Component {
       email: "example@example.com",
       query: "text here",
       error: "",
+      classN: classes.button,
     };
   }
 
@@ -82,6 +83,9 @@ export default class Contact extends React.Component {
     alert("components marked with * are necessary");
   }
   successHandler() {
+    this.setState({
+      classN: [classes.button, classes.buttonLoader].join(" "),
+    });
     axios
       .post("https://kuku-backend.herokuapp.com/contacts", {
         name: this.state.name,
@@ -95,6 +99,7 @@ export default class Contact extends React.Component {
           window.location.reload();
         } else if (response.data == "success") {
           alert("Message Sent Successfully");
+
           window.location.reload();
         } else {
           alert(response.data);
@@ -150,11 +155,13 @@ export default class Contact extends React.Component {
                 onChange={this.handleQueryChange}
               ></textarea>
 
-              <input
-                className={classes.button}
+              <button
+                className={this.state.classN}
                 type="submit"
                 value="Submit"
-              ></input>
+              >
+                <span className={classes.button_text}>submit</span>
+              </button>
             </form>
           </div>
           <div className={classes.socials_container}>
