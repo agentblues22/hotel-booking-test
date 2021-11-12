@@ -90,3 +90,100 @@ a {
 }
 
 /* css of hero ends here*/
+/* css of gallerypiont*/
+.arrow_prev_gallery,
+.arrow_next_gallery {
+  background-color: transparent;
+  font-size: 40px;
+  color: transparent;
+  width: 50px;
+  height: 100%;
+  padding: 400px 0px 100px 0px;
+  position: absolute;
+  z-index: 10;
+  transition-duration: 0.5s;
+}
+.arrow_next_gallery:hover {
+  background-image: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.001)
+  );
+
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.arrow_prev_gallery:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.001)
+  );
+  color: black;
+  transition-duration: 0.5s;
+}
+.arrow_next_gallery {
+  border-radius: 0px 20px 20px 0px;
+  top: 0;
+  right: 5%;
+  padding-left: 400px;
+  padding-right: 40px;
+}
+
+.arrow_prev_gallery {
+  border-radius: 20px 0px 0px 20px;
+  top: 0;
+  left: 5%;
+  padding-right: 400px;
+}
+
+.carouselimagecontainer {
+  border-radius: 0px 20px 0px 20px;
+}
+@media only screen and (max-width: 900px) {
+  .arrow_prev_gallery,
+  .arrow_next_gallery {
+    display: none;
+  }
+}
+/*gallerypointimage*/
+.arrow_prev_gp,
+.arrow_next_gp {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 10;
+  transition-duration: 0.5s;
+}
+.arrow_next_gp:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.arrow_prev_gp:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.arrow_next_gp {
+  top: 50%;
+  right: 25%;
+}
+
+.arrow_prev_gp {
+  top: 50%;
+  left: 25%;
+}
+
+.carouselimagecontainer {
+  border-radius: 0px 20px 0px 20px;
+}
+@media only screen and (max-width: 900px) {
+  .arrow_prev_gp,
+  .arrow_next_gp {
+    display: none;
+  }
+}
