@@ -33,6 +33,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 20px;
 }
 .grid_item_last {
   grid-area: contain3;
@@ -66,7 +67,8 @@
   font-size: 17px;
   margin: 5px 5px 5px 5px;
   font-weight: 700;
-  color: #3a3b3c;
+  color: #606366;
+  transition-duration: 0.2s;
 }
 .footerlinks:hover {
   color: #3a3b3c;
@@ -103,8 +105,11 @@
       "contain3";
   }
   .grid_item_middle {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    padding-bottom: 50px;
   }
   .grid_item_first {
     justify-content: center;
