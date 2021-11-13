@@ -26,8 +26,10 @@
 }
 
 .grid_container {
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 500px 600px;
+  grid-template-rows: auto;
+  grid-template-areas: "contain1 contain2";
   padding: 10px 0px 10px 0px;
   justify-content: center;
   flex-direction: column;
@@ -41,9 +43,10 @@
 .grid_item2 {
   grid-area: contain2;
   padding: 30px 0px 0px 0px;
+  margin-left: 30px;
   font-size: 50px;
   color: rgba(53, 53, 53, 0.9);
-  text-align: center;
+  text-align: left;
 
   display: flex;
   flex-direction: column;
@@ -81,11 +84,9 @@
 
 @media only screen and (max-width: 1100px) {
   .grid_container {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "contain1"
-      "contain2";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .grid_item2 {

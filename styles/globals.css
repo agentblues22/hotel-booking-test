@@ -98,7 +98,7 @@ a {
   color: transparent;
   width: 50px;
   height: 100%;
-  padding: 400px 0px 100px 0px;
+  padding: 250px 0px 50px 0px;
   position: absolute;
   z-index: 10;
   transition-duration: 0.5s;
@@ -127,7 +127,7 @@ a {
   border-radius: 0px 20px 20px 0px;
   top: 0;
   right: 5%;
-  padding-left: 400px;
+  padding-left: 70px;
   padding-right: 40px;
 }
 
@@ -135,7 +135,7 @@ a {
   border-radius: 20px 0px 0px 20px;
   top: 0;
   left: 5%;
-  padding-right: 400px;
+  padding-right: 70px;
 }
 
 .carouselimagecontainer {
@@ -170,12 +170,12 @@ a {
 }
 .arrow_next_gp {
   top: 50%;
-  right: 25%;
+  right: 10%;
 }
 
 .arrow_prev_gp {
   top: 50%;
-  left: 25%;
+  left: 10%;
 }
 
 .carouselimagecontainer {
@@ -184,6 +184,8 @@ a {
 @media only screen and (max-width: 900px) {
   .arrow_prev_gp,
   .arrow_next_gp {
-    display: none;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
   }
 }
