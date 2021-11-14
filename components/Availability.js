@@ -16,17 +16,22 @@ class Availability extends React.Component {
     this.state = {
       from: "",
       to: "",
+      min_to: today,
+      min_from: today,
+      max_from: "",
     };
   }
 
   handleFrom = (event) => {
     this.setState({
       from: event.target.value,
+      min_to: event.target.value,
     });
   };
   handleTo = (event) => {
     this.setState({
       to: event.target.value,
+      max_from: event.target.value,
     });
   };
   render() {
@@ -42,8 +47,9 @@ class Availability extends React.Component {
               type="date"
               id="fname"
               name="firstname"
-              min={today}
+              min={this.state.min_from}
               value={this.state.from}
+              max={this.state.max_from}
               onChange={this.handleFrom}
             />
           </div>
@@ -56,7 +62,7 @@ class Availability extends React.Component {
               type="date"
               id="lname"
               name="lastname"
-              min={today}
+              min={this.state.min_to}
               value={this.state.to}
               onChange={this.handleTo}
             />
