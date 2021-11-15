@@ -246,8 +246,11 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 50px 100px 50px 100px;
     align-items: center;
+  }
+  .collage_text {
+    padding: 0px 0px 0px 0px;
   }
   .collage_text {
     margin: 20px 0px 20px 0px;
@@ -259,11 +262,41 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .para {
+    text-align: justify;
+  }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
+  .collage_section {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    padding: 50px 150px 50px 150px;
+    align-items: center;
+  }
   .collage_text {
     margin: 15px 20px 15px 20px;
     text-align: center;
     font-size: 30px;
+  }
+  .para {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .collage_section {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+  }
+  .collage_text {
+    margin: 15px 20px 15px 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .para {
+    text-align: justify;
   }
 }

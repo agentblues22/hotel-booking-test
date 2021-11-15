@@ -29,7 +29,7 @@ export default function Home() {
           <div className={classes.collage_text}>
             Explore points of interests nearby!
             <div className={classes.paragraphCTA}>
-              <p>
+              <p className={classes.para}>
                 Few of the local attractions are Guruvayoor Temple,
                 Vadakkumnathan Temple, Athirapilly Waterfalls, Kerala
                 Kalamandalam, Shakthan Thampuran Palace, Peechi Dam, Chavakkad

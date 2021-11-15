@@ -92,7 +92,7 @@
   .grid_item2 {
     font-size: 30px;
     color: black;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,13 +104,15 @@
   }
   .heading {
     font-size: 30px;
+    text-align: center;
   }
   .subheading {
     font-size: 19px;
+    text-align: center;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .grid_item2 {
     align-self: center;
     grid-area: contain2;
@@ -118,7 +120,7 @@
     padding: 0px;
     font-size: 30px;
     color: black;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
