@@ -64,7 +64,7 @@
   color: #fafafa;
 }
 .footerlinks {
-  font-size: 17px;
+  font-size: 20px;
   margin: 5px 5px 5px 5px;
   font-weight: 700;
   color: #606366;
@@ -103,6 +103,9 @@
       "contain1"
       "contain2"
       "contain3";
+  }
+  .footerlinks {
+    font-size: 15px;
   }
   .grid_item_middle {
     display: flex;

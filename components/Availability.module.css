@@ -1,6 +1,8 @@
 .main_formcontainer {
   margin: 50px 0px 50px 0px;
   z-index: 100;
+  background-color: #fafafa;
+  border-radius: 60px;
 }
 
 .form_main {
@@ -16,42 +18,41 @@
   margin: 10px 10px 10px 10px;
 }
 .form_label {
-  color: white;
-  font-size: 15px;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .form_item {
   width: 180px;
-  padding: 12px 20px;
+  padding: 20px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-radius: 20px;
   box-sizing: border-box;
-  color: white;
+  color: black;
   background-color: rgba(0, 0, 0, 0);
 }
 .form_button {
   width: 100%;
-  height: 50px;
+  height: 70px;
   padding: 12px 20px;
   margin: 16px 0px 0px 0px;
   border: 1px solid #ccc;
   color: white;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0);
+  border-radius: 60px;
+  background-color: rgba(23, 163, 65, 0.9);
   transition: 0.5s;
 }
 .form_button:hover {
-  background-color: white;
-  color: rgb(53, 53, 53);
+  background-color: rgb(9, 87, 32);
+  color: white;
 }
 .form_option {
   color: black;
 }
-.form_item::-webkit-calendar-picker-indicator {
-  filter: invert(1);
-}
+
 @media (max-width: 900px) {
   .form_main {
     display: flex;
@@ -59,6 +60,17 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  .form_button {
+    width: 100%;
+    height: 70px;
+    padding: 12px 20px;
+    margin: 0px 0px 16px 0px;
+    border: 1px solid #ccc;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(23, 163, 65, 0.9);
+    transition: 0.5s;
   }
 
   .form_itemcontainer {
@@ -70,8 +82,11 @@
   }
 
   .main_formcontainer {
-    margin: 20px 0px 20px 0px;
-    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
   }
 
   .form_item {

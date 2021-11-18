@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import classes from "./Availability.module.css";
+import Image from "next/dist/client/image";
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, "0");
@@ -81,11 +82,13 @@ class Availability extends React.Component {
             ></input>
           </div>
           <div className={classes.form_itemcontainer}>
-            <input
+            <button
               className={classes.form_button}
               type="submit"
               value="Check Availability"
-            />
+            >
+              <Image src="/search.png" height="30px" width="30px"></Image>
+            </button>
           </div>
         </form>
       </div>
