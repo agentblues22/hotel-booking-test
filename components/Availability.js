@@ -87,7 +87,12 @@ class Availability extends React.Component {
               type="submit"
               value="Check Availability"
             >
-              <Image src="/search.png" height="30px" width="30px"></Image>
+              <Image
+                src="/search.png"
+                alt="search"
+                height="30px"
+                width="30px"
+              ></Image>
             </button>
           </div>
         </form>
