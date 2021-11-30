@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "jakarta";
-  src: url(../public/fonts/PlusJakartaDisplay-Medium.otf);
+  font-family: "calibiri";
+  src: url(../public/fonts/calibri/Calibri\ Regular.ttf);
 }
 .body {
-  font-family: jakarta;
+  font-family: calibiri;
 }
 .icongallery_section {
   padding: 50px;

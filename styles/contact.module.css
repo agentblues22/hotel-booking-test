@@ -1,14 +1,15 @@
 @font-face {
-  font-family: "jakarta";
-  src: url(../public/fonts/PlusJakartaDisplay-Medium.otf);
+  font-family: "calibiri";
+  src: url(../public/fonts/calibri/Calibri\ Regular.ttf);
 }
 
 .main_section {
-  font-family: jakarta;
+  font-family: calibiri;
   background-image: url("../public/carouselphotos/photo\ 9.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-size: 20px;
 }
 
 .span {
@@ -47,6 +48,7 @@
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -61,6 +63,7 @@
 .buttonLoader .button_text {
   visibility: hidden;
   opacity: 0;
+  font-size: 20px;
 }
 .buttonLoader::after {
   content: "";
@@ -120,5 +123,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .main_section {
+    font-size: 15px;
   }
 }

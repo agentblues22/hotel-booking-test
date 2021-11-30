@@ -32,7 +32,7 @@
 }
 .grid_item1 {
   grid-area: contain1;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
 .grid_item2 {
@@ -226,6 +226,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.para {
+  font-size: 20px;
+}
 .collage_section {
   display: flex;
   flex-direction: row;
@@ -264,6 +267,8 @@
   }
   .para {
     text-align: justify;
+    text-align-last: center;
+    text-align-last: center;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -281,6 +286,8 @@
   }
   .para {
     text-align: justify;
+    font-size: 15px;
+    text-align-last: center;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -298,5 +305,7 @@
   }
   .para {
     text-align: justify;
+    font-size: 15px;
+    text-align-last: center;
   }
 }

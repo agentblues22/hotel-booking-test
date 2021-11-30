@@ -94,22 +94,24 @@ export default function Discover() {
                 <div>{photo.heading}</div>
               </div>
               <div className={classes.room_paragraph}>{photo.description}</div>
-              <div>
-                <p className={classes.stats}>
-                  <span className={classes.spantext}>Space size :</span>
-                  {photo.area}
-                </p>
-                <p className={classes.stats}>
-                  <span className={classes.spantext}>Max Occupancy :</span>
-                  {photo.max_occ}
-                </p>
-                <p className={classes.stats}>
-                  <span className={classes.spantext}>Tariff : ₹</span>
-                  {photo.tariff}
-                </p>
-              </div>
-              <div className={classes.icongallery}>
-                <Icongallery />
+              <div className={classes.infobox}>
+                <div className={classes.statsbox}>
+                  <p className={classes.stats}>
+                    <span className={classes.spantext}>Space size :</span>
+                    {photo.area}
+                  </p>
+                  <p className={classes.stats}>
+                    <span className={classes.spantext}>Max Occupancy :</span>
+                    {photo.max_occ}
+                  </p>
+                  <p className={classes.stats}>
+                    <span className={classes.spantext}>Tariff : ₹</span>
+                    {photo.tariff}
+                  </p>
+                </div>
+                <div className={classes.icongallery}>
+                  <Icongallery />
+                </div>
               </div>
               <div className={classes.small_reminder}>
                 * Additional charges applicable for extra bed{" "}

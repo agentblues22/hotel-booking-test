@@ -93,6 +93,7 @@
     font-size: 30px;
     color: black;
     text-align: justify;
+    text-align-last: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +122,7 @@
     font-size: 30px;
     color: black;
     text-align: justify;
+    text-align-last: center;
     display: flex;
     flex-direction: column;
     justify-content: center;

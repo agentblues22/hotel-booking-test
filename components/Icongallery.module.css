@@ -4,6 +4,12 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 600px;
+  border: 0.01px solid rgba(211, 190, 190, 0.7);
+  box-shadow: 0.01px 0.01px 0.01px 0.01px rgba(211, 190, 190, 0.6);
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .imagegallery_container {
@@ -16,14 +22,13 @@
   grid-template-areas: "contain1 contain2 ";
   flex-direction: row;
   border-radius: 25px;
-  width: 200px;
+  width: 180px;
   justify-content: space-evenly;
   color: #3a3b3c;
   margin: 0px 0px 10px 0px;
-  border: 1px solid rgba(211, 190, 190, 0.7);
+  border: 1px solid transparent;
   transition: 0.5s;
   background-color: white;
-  box-shadow: 2px 2px 15px 2px rgba(211, 190, 190, 0.6);
 }
 .imagegallery_paragraph {
   border-radius: 0px 10px;
@@ -46,6 +51,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     justify-self: center;
+    width: auto;
+    margin-left: 0px;
   }
 
   .imagegallery_container {

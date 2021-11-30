@@ -16,6 +16,10 @@
   font-style: italic;
   margin: 10px 0px 10px 0px;
 }
+.infobox {
+  display: flex;
+  flex-direction: row;
+}
 .room_imgcontainer {
   grid-area: contain1;
   border-radius: 0px 20px;
@@ -26,7 +30,7 @@
 }
 .spantext {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   color: #3a3b3c;
 }
 .galleryCTA {
@@ -83,7 +87,16 @@
   font-weight: bold;
 }
 .stats {
-  font-size: 20px;
+  font-size: 15px;
+}
+.statsbox {
+  border: 0.01px solid rgba(211, 190, 190, 0.7);
+  box-shadow: 0.01px 0.01px 0.01px 0.01px rgba(211, 190, 190, 0.6);
+
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 10px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -95,16 +108,46 @@
     margin: 10px 10px 10px 10px;
     padding: 10px;
   }
-
+  .room_paragraph {
+    font-family: "calibiri";
+    align-self: center;
+    font-size: 15px;
+    text-align: justify;
+    text-align-last: center;
+  }
+  .infobox {
+    display: flex;
+    flex-direction: column;
+  }
   .room_info {
     text-align: center;
     padding-left: 0px;
   }
   .room_heading {
     justify-content: center;
+    font-size: 30px;
   }
   .galleryCTA {
     width: 100%;
     font-size: 13px;
+  }
+  .statsbox {
+    text-align: justify;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align-last: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .statsbox {
+    text-align: justify;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

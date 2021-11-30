@@ -160,7 +160,7 @@ export default class Contact extends React.Component {
                 type="submit"
                 value="Submit"
               >
-                <span className={classes.button_text}>submit</span>
+                <span className={classes.button_text}>Submit</span>
               </button>
             </form>
           </div>

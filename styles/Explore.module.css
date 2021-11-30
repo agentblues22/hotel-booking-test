@@ -92,7 +92,8 @@
     font-family: "calibiri";
     align-self: center;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
   }
   .POI_heading {
     font-family: "calibiri";
@@ -101,8 +102,9 @@
     flex-direction: row;
     justify-content: center;
     margin: 15px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    text-align: center;
   }
 
   .POI_misc {
