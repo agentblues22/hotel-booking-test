@@ -45,8 +45,8 @@ function Icongallery() {
                 alt={photo.description}
                 className={classes.imagegallery_container}
                 src={photo.url}
-                width="40px"
-                height="30px"
+                width="50px"
+                height="50px"
               ></Image>
             </div>
             <div className={classes.imagegallery_paragraph}>
