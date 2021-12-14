@@ -46,12 +46,13 @@ a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 40px;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 25px;
   position: absolute;
   z-index: 10;
   transition-duration: 0.5s;
+  text-align: center;
 }
 .arrow_next:hover {
   color: black;
@@ -151,7 +152,7 @@ a {
 .arrow_prev_gp,
 .arrow_next_gp {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 40px;
+  font-size: 50px;
   background-color: rgba(0, 0, 0, 0.8);
   width: 50px;
   height: 50px;

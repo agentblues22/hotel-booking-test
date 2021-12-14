@@ -21,7 +21,7 @@ const PrevArrow = ({ onClick }) => {
 const Gallery = (props) => {
   const photos = props.images;
   const settings = {
-    dots: true,
+    dots: false,
     fade: true,
     infinite: true,
     speed: 500,
