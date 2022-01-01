@@ -50,20 +50,28 @@ export default function Home() {
         <div className={classes.accordion_container}>
           <div className={classes.faq_heading}>Frequently Asked Questions</div>
           <Accordion
-            title="location of the residency?"
-            body="address of the residency is given in the footer. please refer."
+            title=" Will I be charged for extra guests occupying my room?"
+            body="Hotel room rates vary by date and by the number of adults occupying a single room. To accommodate more than two guests, you will have additional charges. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com for more details. "
           />
           <Accordion
-            title="how long does a room stays booked?"
-            body="rooms stay booked typically for 24 hours. for more info. contact the residency."
+            title=" What is your policy regarding cancellation? "
+            body="If your travel plans change, you can cancel or modify your reservation in accordance with the hotel's cancellation policy. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com for more details."
           />
           <Accordion
-            title="are sundays closed?"
-            body="during covid lockdown, sundays are currently closed.for more details contact residency. contact the residency."
+            title="Where can I find maps and directions to the hotel? "
+            body=" When on the hotel’s Contact Us page, you’ll find contact details for the hotel. Scroll down further to the section on how to get to the hotel. This will include an interactive map helping you find the hotel from your chosen location, via car, public transport or on foot. For any questions, please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com."
           />
           <Accordion
-            title="do we have hotel service as well?"
-            body="still in the works. but we plan to have hotel service in the furure"
+            title="Can I book more than one room at a time?"
+            body="Yes, you can book up to twenty rooms at a time. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com for more details."
+          />
+          <Accordion
+            title=" What if I arrive earlier or plan to leave later than I originally expected? Can I request a early check-in or a late check out? "
+            body="We'll do our best to accommodate your change in travel plans; however, policies regarding early check-in and late check-out vary depending on availability of room. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com for any change in plan."
+          />
+          <Accordion
+            title=" Is there a minimum age requirement to reserve a hotel room?"
+            body="Although hotel policies may vary, most hotels have a minimum age requirement of 18 years old. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com prior to your arrival to make any necessary arrangements."
           />
         </div>
       </section>

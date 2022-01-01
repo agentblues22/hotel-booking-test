@@ -10,14 +10,16 @@ function MainNavigation() {
   return (
     <section className={classes.container}>
       <div>
-        <div>
-          <Image
-            alt="kuku residency"
-            src="/logo.png"
-            width="150px"
-            height="60px"
-          />
-        </div>
+        <NextLink href="/" passHref>
+          <div>
+            <Image
+              alt="kuku residency"
+              src="/logo.png"
+              width="150px"
+              height="60px"
+            />
+          </div>
+        </NextLink>
       </div>
       <div className="nav">
         <label className={classes.label} htmlFor="toggle">
