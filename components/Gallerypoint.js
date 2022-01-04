@@ -11,13 +11,25 @@ const photos = [
     images: [
       {
         name: "photo 1",
-        url: "/carouselphotos/photo 13.jpg",
+        url: "/carouselphotos/photo 12.jpg",
         desc: "photo descrption",
         key: "01",
       },
       {
         name: "photo 2",
+        url: "/carouselphotos/photo 13.jpg",
+        desc: "photo descrption",
+        key: "02",
+      },
+      {
+        name: "photo 3",
         url: "/carouselphotos/photo 14.jpg",
+        desc: "photo descrption",
+        key: "01",
+      },
+      {
+        name: "photo 4",
+        url: "/carouselphotos/photo 15.jpg",
         desc: "photo descrption",
         key: "02",
       },
@@ -30,13 +42,25 @@ const photos = [
     images: [
       {
         name: "photo 1",
-        url: "/carouselphotos/photo 12.jpg",
+        url: "/carouselphotos/photo 16.jpg",
         desc: "photo descrption",
         key: "01",
       },
       {
         name: "photo 2",
-        url: "/carouselphotos/photo 15.jpg",
+        url: "/carouselphotos/photo 17.jpg",
+        desc: "photo descrption",
+        key: "02",
+      },
+      {
+        name: "photo 3",
+        url: "/carouselphotos/photo 18.jpg",
+        desc: "photo descrption",
+        key: "01",
+      },
+      {
+        name: "photo 4",
+        url: "/carouselphotos/photo 19.jpg",
         desc: "photo descrption",
         key: "02",
       },

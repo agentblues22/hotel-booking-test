@@ -66,7 +66,7 @@ export default function Home() {
             body="Yes, you can book up to twenty rooms at a time. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com for more details."
           />
           <Accordion
-            title=" What if I arrive earlier or plan to leave later than I originally expected? Can I request a early check-in or a late check out? "
+            title="Can I request a early check-in or a late check out? "
             body="We'll do our best to accommodate your change in travel plans; however, policies regarding early check-in and late check-out vary depending on availability of room. Please contact the reception at +91 902 031 6400 / +91 807 569 8245 or email us at kukuresidencytcr@gmail.com for any change in plan."
           />
           <Accordion
