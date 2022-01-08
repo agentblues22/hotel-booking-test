@@ -156,15 +156,32 @@ export default class Discover extends React.Component {
                     />
                   </div>
                   <div className={classes.contents}>
-                    <div>For Bookings Contact:</div>
-                    <div>
-                      <a href="tel:+919020316400" passHref>
-                        +91 902 031 6400
-                      </a>{" "}
-                      /
-                      <a href="tel:+918075698275" passHref>
-                        +91 807 569 8245
-                      </a>
+                    <div className={classes.contacttext}>
+                      For Bookings Contact:
+                    </div>
+                    <div className={classes.centralise}>
+                      <div className={classes.contactbox}>
+                        <a href="tel:+919020316400" passHref>
+                          +91 902 031 6400
+                        </a>{" "}
+                      </div>
+                    </div>
+                    <div className={classes.centralise}>
+                      <div className={classes.contactbox}>
+                        <a href="tel:+918075698275" passHref>
+                          +91 807 569 8245
+                        </a>
+                      </div>
+                    </div>
+                    <div className={classes.centralise}>
+                      <div className={classes.contactbox}>
+                        <NextLink
+                          href="mailto:kukuresidencytcr@gmail.com"
+                          passHref
+                        >
+                          kukuresidencytcr@gmail.com
+                        </NextLink>
+                      </div>
                     </div>
                   </div>
                   <div className={classes.social_media}>
@@ -173,8 +190,8 @@ export default class Discover extends React.Component {
                         <Image
                           alt="facebook"
                           src="/facebook_black.png"
-                          width="60px"
-                          height="60px"
+                          width="40px"
+                          height="40px"
                         />
                       </NextLink>
                     </div>
@@ -183,8 +200,8 @@ export default class Discover extends React.Component {
                         <Image
                           alt="twitter"
                           src="/twitter_black.png"
-                          width="60px"
-                          height="60px"
+                          width="40px"
+                          height="40px"
                         />
                       </NextLink>
                     </div>
@@ -193,8 +210,8 @@ export default class Discover extends React.Component {
                         <Image
                           alt="twitter"
                           src="/instagram_black.png"
-                          width="60px"
-                          height="60px"
+                          width="40px"
+                          height="40px"
                         />
                       </NextLink>
                     </div>

@@ -9,14 +9,16 @@ function Footer() {
       <div className={classes.maincontainer}>
         <div className={classes.grid_container}>
           <div className={classes.grid_item_first}>
-            <div>
-              <Image
-                alt="kuku residency"
-                src="/logo.png"
-                width="200px"
-                height="80px"
-              />
-            </div>
+            <NextLink href="/" passHref>
+              <div>
+                <Image
+                  alt="kuku residency"
+                  src="/logo.png"
+                  width="200px"
+                  height="80px"
+                />
+              </div>
+            </NextLink>
             <p className={classes.heading_four}>Make you feel at home.</p>
             <div>
               <Map />

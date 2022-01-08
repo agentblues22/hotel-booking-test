@@ -134,11 +134,11 @@
   background-color: rgb(9, 87, 32);
 }
 .contents {
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
-  top: 40%;
-
-  margin: 15px;
+  top: 25%;
+  width: 100%;
+  left: 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,12 +146,42 @@
 
 .social_media {
   position: absolute;
-  top: 70%;
+  top: 80%;
   width: 100%;
   left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.contactbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  padding: 5px;
+  width: 300px;
+  margin: 10px 0px 10px 0px;
+  border: 2px solid rgba(0, 0, 0, 0.01);
+  background-color: rgba(23, 163, 65, 0.9);
+  color: white;
+  border-radius: 10px;
+}
+.contacttext {
+  color: grey;
+  font-size: 30px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+.centralise {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -232,5 +262,39 @@
     right: 10px;
     width: 30px;
     height: 30px;
+  }
+  .contactbox {
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    padding: 5px;
+    width: 150px;
+    margin: 10px 0px 10px 0px;
+    border: 2px solid rgba(0, 0, 0, 0.01);
+    background-color: rgba(23, 163, 65, 0.9);
+    color: white;
+    border-radius: 10px;
+  }
+  .contacttext {
+    color: grey;
+    font-size: 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .social_media {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
